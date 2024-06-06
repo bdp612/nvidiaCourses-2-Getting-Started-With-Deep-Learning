@@ -1,4 +1,4 @@
-# Load Libraries
+# Import necessary libraries
 import torch.nn as nn
 import pandas as pd
 import torch
@@ -53,45 +53,26 @@ def get_batch_accuracy(output, y, N):
     correct = pred.eq(y.view_as(pred)).sum().item()
     return correct / N
 
-# Check GPU
+# Check for GPU availability
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-torch.cuda.is_available()
 
-# Read Datasets
+# Read training and validation datasets
 train_df = pd.read_csv("data/asl_data/sign_mnist_train.csv")
 valid_df = pd.read_csv("data/asl_data/sign_mnist_valid.csv")
 
-train_df.head()
-
-# Extract Labels and Images
+# Extract and normalize
 y_train = train_df.pop('label')
 y_valid = valid_df.pop('label')
-x_train = train_df.values
-x_valid = valid_df.values
-
-# Visualizing the Data
-plt.figure(figsize=(40,40))
-num_images = 20
-for i in range(num_images):
-    row = x_train[i]
-    label = y_train[i]
-    image = row.reshape(28,28)
-    plt.subplot(1, num_images, i+1)
-    plt.title(label, fontdict={'fontsize': 30})
-    plt.axis('off')
-    plt.imshow(image, cmap='gray')
-
-# Normalize
 x_train = train_df.values / 255
 x_valid = valid_df.values / 255
 
-# Dataloaders
+# Define data loaders with batch size and shuffling
 BATCH_SIZE = 32
 train_data = MyDataset(x_train, y_train)
-train_loader = DataLoader(train_data, batch_size=BATCH_SIZE, shuffle=True)
-train_N = len(train_loader.dataset)
 valid_data = MyDataset(x_valid, y_valid)
+train_loader = DataLoader(train_data, batch_size=BATCH_SIZE, shuffle=True)
 valid_loader = DataLoader(valid_data, batch_size=BATCH_SIZE)
+train_N = len(train_loader.dataset)
 valid_N = len(valid_loader.dataset)
 
 # Build The Model

@@ -78,6 +78,8 @@ valid_set.transform = transformations
 batch_size = 32
 train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
 valid_loader = DataLoader(valid_set, batch_size=batch_size)
+train_N = len(train_loader.dataset)
+valid_N = len(valid_loader.dataset)
 
 # Define the neural network layers
 input_size = 1 * 28 * 28
@@ -101,9 +103,7 @@ model = torch.compile(model)  # Compile the model for optimized execution
 loss_function = nn.CrossEntropyLoss()
 optimizer = Adam(model.parameters())
 
-# Get dataset sizes
-train_N = len(train_loader.dataset)
-valid_N = len(valid_loader.dataset)
+
 
 # Training loop for a specified number of epochs
 epochs = 5
