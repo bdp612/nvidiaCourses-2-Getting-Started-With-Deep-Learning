@@ -6,6 +6,7 @@ __pycache__/
 # Course Files
 01_mnist.ipynb
 02_asl.ipynb
+03_asl_cnn.ipynb
 jupyterCodeExtract.py
 
 # C extensions
