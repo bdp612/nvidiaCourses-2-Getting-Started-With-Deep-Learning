@@ -10,8 +10,8 @@ https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V
 Demonstrating the ability to recognize handwritten numbers.
 
 <p align="center">
-	<img src="images/1. Handwritten.png" align="center" width="400"/>
-	<img src="images/1. Result.png" align="center" width="400"/>
+	<img src="images/1. Handwritten.png" align="center" width="400"/><br><br>
+	<img src="images/1. Result.png" align="center" width="400"/><br><br>
 </p>
 
 2. Image Classification of an American Sign Language Dataset
@@ -19,7 +19,7 @@ Demonstrating the ability to recognize handwritten numbers.
 Demonstrating the ability to recognize ASL iamges. Testing results approach 100% while Validity results show overfitting issues.
 
 <p align="center">
-	<img src="images/2. Result.png" align="center" width="400"/>
+	<img src="images/2. Result.png" align="center" width="400"/><br>
 </p>
 
 3. Convolutional Neural Networks
