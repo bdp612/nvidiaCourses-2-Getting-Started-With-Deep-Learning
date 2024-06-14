@@ -7,6 +7,8 @@ __pycache__/
 01_mnist.ipynb
 02_asl.ipynb
 03_asl_cnn.ipynb
+04a_asl_augmentation.ipynb
+04b_asl_predictions.ipynb
 jupyterCodeExtract.py
 
 # C extensions
