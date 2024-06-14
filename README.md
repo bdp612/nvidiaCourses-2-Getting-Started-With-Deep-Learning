@@ -25,3 +25,12 @@ Demonstrating the ability to recognize ASL iamges. Testing results approach 100%
 3. Convolutional Neural Networks
 
 Greatly improved on overfitting issue. Validation scores still slightly worse than Training.
+
+4. Convolutional Neural Networks
+
+Fixed overfitting issue with augmented data. Randomly applied flips, rotations, cropping, and brightness/contrast changes.
+
+<p align="center">
+	<img src="images/4. Cropped Image.png" align="center" width="400"/><br><br>
+	<img src="images/4. Rotated Image.png" align="center" width="400"/><br><br>
+</p>
