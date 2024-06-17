@@ -40,6 +40,6 @@ Fixed overfitting issue with augmented data. Randomly applied flips, rotations, 
 Using VGG16 network on the ImageNet dataset, to determine which animal is attempting to go through the doggy door (only dogs allowed in and out), and then, to identify a specific dog among others (Bo).
 
 <p align="center">
-	<img src="images/5. Happy Dog.png" align="center" width="300"/>
-	<img src="images/5. Bo.png" align="center" width="300"/><br><br>
+	<img src="images/5. Happy Dog.jpg" align="center" width="300"/>
+	<img src="images/5. Bo.jpg" align="center" width="300"/><br><br>
 </p>
