@@ -26,11 +26,20 @@ Demonstrating the ability to recognize ASL iamges. Testing results approach 100%
 
 Greatly improved on overfitting issue. Validation scores still slightly worse than Training.
 
-4. Convolutional Neural Networks
+4. Data Augmentation
 
 Fixed overfitting issue with augmented data. Randomly applied flips, rotations, cropping, and brightness/contrast changes.
 
 <p align="center">
-	<img src="images/4. Cropped Image.png" align="center" width="400"/><br><br>
-	<img src="images/4. Rotated Image.png" align="center" width="400"/><br><br>
+	<img src="images/4. Cropped Image.png" align="center" width="300"/>
+	<img src="images/4. Rotated Image.png" align="center" width="300"/><br><br>
+</p>
+
+5. Pre-Trained Models
+
+Using VGG16 network on the ImageNet dataset, to determine which animal is attempting to go through the doggy door (only dogs allowed in and out), and then, to identify a specific dog among others (Bo).
+
+<p align="center">
+	<img src="images/5. Happy Dog.png" align="center" width="300"/>
+	<img src="images/5. Bo.png" align="center" width="300"/><br><br>
 </p>

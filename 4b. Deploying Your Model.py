@@ -14,7 +14,6 @@ def show_image(image_path):
     image = mpimg.imread(image_path)
     plt.imshow(image, cmap='gray')
 
-# SOLUTION
 def predict_letter(file_path):
     show_image(file_path)
     image = tv_io.read_image(file_path, tv_io.ImageReadMode.GRAY)

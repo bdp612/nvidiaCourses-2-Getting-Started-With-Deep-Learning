@@ -9,6 +9,8 @@ __pycache__/
 03_asl_cnn.ipynb
 04a_asl_augmentation.ipynb
 04b_asl_predictions.ipynb
+05a_doggy_door.ipynb
+05b_presidential_doggy_door.ipynb
 jupyterCodeExtract.py
 
 # C extensions
