@@ -44,11 +44,19 @@ Using VGG16 network on the ImageNet dataset, to determine which animal is attemp
 	<img src="images/5. Bo.jpg" align="center" width="300"/><br><br>
 </p>
 
-5. Natural Language Processinng
+6. Natural Language Processinng
 
 Using NLP to fill in blanks, and to answer questions.
 
 <p align="center">
 	<img src="images/6. Missing Word.png" align="center" width="700"/><br><br>
 	<img src="images/6. Answering Question.png" align="center" width="700"/><br><br>
+</p>
+
+7. Assessment
+
+Generated a model to pass assessment. Passing score needed to be 92% accurate. Generated model was over 98% accurate. Included "FIXME" in code so as to not spoil the answers. 
+
+<p align="center">
+	<img src="images/7. Assessment Passed.png" align="center" width="700"/><br><br>
 </p>
