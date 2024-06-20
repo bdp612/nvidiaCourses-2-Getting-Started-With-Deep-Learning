@@ -43,3 +43,12 @@ Using VGG16 network on the ImageNet dataset, to determine which animal is attemp
 	<img src="images/5. Happy Dog.jpg" align="center" width="300"/>
 	<img src="images/5. Bo.jpg" align="center" width="300"/><br><br>
 </p>
+
+5. Natural Language Processinng
+
+Using NLP to fill in blanks, and to answer questions.
+
+<p align="center">
+	<img src="images/6. Missing Word.png" align="center" width="700"/><br><br>
+	<img src="images/6. Answering Question.png" align="center" width="700"/><br><br>
+</p>
